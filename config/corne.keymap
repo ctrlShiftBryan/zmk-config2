@@ -19,37 +19,37 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp 0  &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y           &kp U  &kp I      &kp O    &kp P     &none
-&none  &kp A  &kp S  &kp D  &kp F  &kp G        &kp H           &kp J  &kp K      &kp L    &kp SEMI  &none
-&none  &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N           &kp M  &kp COMMA  &kp DOT  &kp FSLH  &none
-                     &mo 1  &mo 1  &kp SPACE    &kp LEFT_SHIFT  &mo 2  &none
+&kp N0  &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y           &kp U  &kp I      &kp O    &kp P     &none
+&none   &kp A  &kp S  &kp D  &kp F  &kp G        &kp H           &kp J  &kp K      &kp L    &kp SEMI  &none
+&none   &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N           &kp M  &kp COMMA  &kp DOT  &kp FSLH  &none
+                      &mo 1  &mo 1  &kp SPACE    &kp LEFT_SHIFT  &mo 2  &none
             >;
         };
 
         sym {
             bindings = <
-&kp 1  &kp ESC    &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp TILDE      &kp CARET  &kp RIGHT_PARENTHESIS    &kp RIGHT_BRACE          &kp RIGHT_BRACKET                &kp GRAVE                   &trans
-&trans  &kp MINUS  &kp ASTERISK      &kp EQUAL       &kp UNDERSCORE        &kp DOLLAR     &kp HASH   &mt RIGHT_GUI RIGHT_GUI  &mt RIGHT_ALT RIGHT_ALT  &mt RIGHT_CONTROL RIGHT_CONTROL  &mt RIGHT_SHIFT LEFT_SHIFT  &trans
-&trans  &kp PLUS   &kp PIPE          &kp AT_SIGN     &kp SLASH             &kp PERCENT    &none      &kp BACKSLASH            &kp AMPERSAND            &kp QUESTION                     &kp EXCLAMATION             &trans
-                                     &trans          &trans                &trans         &trans     &trans                   &trans
+&kp NUMBER_1  &kp ESC    &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp TILDE      &kp CARET  &kp RIGHT_PARENTHESIS    &kp RIGHT_BRACE          &kp RIGHT_BRACKET                &kp GRAVE                   &trans
+&trans        &kp MINUS  &kp ASTERISK      &kp EQUAL       &kp UNDERSCORE        &kp DOLLAR     &kp HASH   &mt RIGHT_GUI RIGHT_GUI  &mt RIGHT_ALT RIGHT_ALT  &mt RIGHT_CONTROL RIGHT_CONTROL  &mt RIGHT_SHIFT LEFT_SHIFT  &trans
+&trans        &kp PLUS   &kp PIPE          &kp AT_SIGN     &kp SLASH             &kp PERCENT    &none      &kp BACKSLASH            &kp AMPERSAND            &kp QUESTION                     &kp EXCLAMATION             &trans
+                                           &trans          &trans                &trans         &trans     &trans                   &trans
             >;
         };
 
         nav {
             bindings = <
-&kp 2  &kp TAB    &kp LEFT_BRACKET  &kp ESC  &kp ESC  &kp ESC    &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC  &trans
-&trans  &kp MINUS  &kp ASTERISK      &kp ESC  &kp ESC  &kp ESC    &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC  &trans
-&trans  &kp PLUS   &kp PIPE          &kp ESC  &kp ESC  &kp ESC    &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC  &trans
-                                     &trans   &trans   &trans     &trans   &trans   &trans
+&kp NUMBER_2  &kp TAB    &kp LEFT_BRACKET  &kp ESC  &kp ESC  &kp ESC    &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC  &trans
+&trans        &kp MINUS  &kp ASTERISK      &kp ESC  &kp ESC  &kp ESC    &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC  &trans
+&trans        &kp PLUS   &kp PIPE          &kp ESC  &kp ESC  &kp ESC    &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC  &trans
+                                           &trans   &trans   &trans     &trans   &trans   &trans
             >;
         };
 
         num {
             bindings = <
-&kp 3  &kp ESC    &kp LEFT_BRACKET  &kp ESC  &kp NUMBER_1  &kp ESC    &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC  &trans
-&trans  &kp MINUS  &kp ASTERISK      &kp ESC  &kp ESC       &kp ESC    &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC  &trans
-&trans  &kp PLUS   &kp PIPE          &kp ESC  &kp ESC       &kp ESC    &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC  &trans
-                                     &trans   &trans        &trans     &trans   &trans   &trans
+&kp NUMBER_3  &kp ESC    &kp LEFT_BRACKET  &kp ESC  &kp NUMBER_1  &kp ESC    &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC  &trans
+&trans        &kp MINUS  &kp ASTERISK      &kp ESC  &kp ESC       &kp ESC    &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC  &trans
+&trans        &kp PLUS   &kp PIPE          &kp ESC  &kp ESC       &kp ESC    &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC  &trans
+                                           &trans   &trans        &trans     &trans   &trans   &trans
             >;
         };
     };
