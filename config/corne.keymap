@@ -6,6 +6,9 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/ext_power.h>
+
+&ext_power EP_ON
 
 / {
     keymap {
@@ -28,19 +31,19 @@
 
         sym {
             bindings = <
-&kp NUMBER_1  &kp ESC    &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp TILDE      &kp CARET  &kp RIGHT_PARENTHESIS    &kp RIGHT_BRACE          &kp RIGHT_BRACKET                &kp GRAVE                   &trans
-&trans        &kp MINUS  &kp ASTERISK      &kp EQUAL       &kp UNDERSCORE        &kp DOLLAR     &kp HASH   &sk RIGHT_GUI            &sk RIGHT_ALT            &sk RIGHT_CONTROL                &sk RIGHT_SHIFT             &trans
-&trans        &kp PLUS   &kp PIPE          &kp AT_SIGN     &kp SLASH             &kp PERCENT    &none      &kp BACKSLASH            &kp AMPERSAND            &kp QUESTION                     &kp EXCLAMATION             &trans
-                                           &trans          &trans                &trans         &trans     &trans                   &trans
+&kp NUMBER_1  &kp ESC    &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp TILDE      &kp CARET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GRAVE        &trans
+&trans        &kp MINUS  &kp ASTERISK      &kp EQUAL       &kp UNDERSCORE        &kp DOLLAR     &kp HASH   &sk RIGHT_GUI          &sk RIGHT_ALT    &sk RIGHT_CONTROL  &sk RIGHT_SHIFT  &trans
+&trans        &kp PLUS   &kp PIPE          &kp AT_SIGN     &kp SLASH             &kp PERCENT    &none      &kp BACKSLASH          &kp AMPERSAND    &kp QUESTION       &kp EXCLAMATION  &trans
+                                           &trans          &trans                &trans         &trans     &trans                 &trans
             >;
         };
 
         nav {
             bindings = <
-&kp NUMBER_2  &kp TAB         &kp LEFT_BRACKET  &kp ESC  &kp ESC  &kp ESC    &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp DEL        &trans
-&trans        &kp LEFT_SHIFT  &kp ASTERISK      &kp ESC  &kp ESC  &kp ESC    &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp BACKSPACE  &trans
-&trans        &kp PLUS        &kp PIPE          &kp ESC  &kp ESC  &kp ESC    &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ENTER      &trans
-                                                &trans   &trans   &trans     &trans   &trans   &trans
+&kp NUMBER_2  &kp TAB         &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp LS(TAB)    &kp TAB        &kp K_VOLUME_UP      &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp DEL        &trans
+&trans        &kp LEFT_SHIFT  &kp RCTRL                          &kp LEFT_ALT   &kp LEFT_GUI   &kp K_VOLUME_DOWN    &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp BACKSPACE  &trans
+&trans        &kp LC(LS(H))   &kp RS(RC(L))                      &kp K_FORWARD  &kp K_FORWARD  &kp K_PLAY_PAUSE     &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ENTER      &trans
+                                                                 &trans         &trans         &trans               &trans   &trans   &trans
             >;
         };
 
