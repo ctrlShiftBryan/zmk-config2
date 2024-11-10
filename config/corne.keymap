@@ -29,7 +29,7 @@
         sym {
             bindings = <
 &kp NUMBER_1  &kp ESC    &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp TILDE      &kp CARET  &kp RIGHT_PARENTHESIS    &kp RIGHT_BRACE          &kp RIGHT_BRACKET                &kp GRAVE                   &trans
-&trans        &kp MINUS  &kp ASTERISK      &kp EQUAL       &kp UNDERSCORE        &kp DOLLAR     &kp HASH   &mt RIGHT_GUI RIGHT_GUI  &mt RIGHT_ALT RIGHT_ALT  &mt RIGHT_CONTROL RIGHT_CONTROL  &mt RIGHT_SHIFT LEFT_SHIFT  &trans
+&trans        &kp MINUS  &kp ASTERISK      &kp EQUAL       &kp UNDERSCORE        &kp DOLLAR     &kp HASH   &sk RIGHT_GUI            &sk RIGHT_ALT            &sk RIGHT_CONTROL                &sk RIGHT_SHIFT             &trans
 &trans        &kp PLUS   &kp PIPE          &kp AT_SIGN     &kp SLASH             &kp PERCENT    &none      &kp BACKSLASH            &kp AMPERSAND            &kp QUESTION                     &kp EXCLAMATION             &trans
                                            &trans          &trans                &trans         &trans     &trans                   &trans
             >;
@@ -37,19 +37,19 @@
 
         nav {
             bindings = <
-&kp NUMBER_2  &kp TAB    &kp LEFT_BRACKET  &kp ESC  &kp ESC  &kp ESC    &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC  &trans
-&trans        &kp MINUS  &kp ASTERISK      &kp ESC  &kp ESC  &kp ESC    &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC  &trans
-&trans        &kp PLUS   &kp PIPE          &kp ESC  &kp ESC  &kp ESC    &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC  &trans
-                                           &trans   &trans   &trans     &trans   &trans   &trans
+&kp NUMBER_2  &kp TAB         &kp LEFT_BRACKET  &kp ESC  &kp ESC  &kp ESC    &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp DEL        &trans
+&trans        &kp LEFT_SHIFT  &kp ASTERISK      &kp ESC  &kp ESC  &kp ESC    &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp BACKSPACE  &trans
+&trans        &kp PLUS        &kp PIPE          &kp ESC  &kp ESC  &kp ESC    &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ENTER      &trans
+                                                &trans   &trans   &trans     &trans   &trans   &trans
             >;
         };
 
         num {
             bindings = <
-&kp NUMBER_3  &kp ESC    &kp LEFT_BRACKET  &kp ESC  &kp NUMBER_1  &kp ESC    &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC  &trans
-&trans        &kp MINUS  &kp ASTERISK      &kp ESC  &kp ESC       &kp ESC    &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC  &trans
-&trans        &kp PLUS   &kp PIPE          &kp ESC  &kp ESC       &kp ESC    &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC  &trans
-                                           &trans   &trans        &trans     &trans   &trans   &trans
+&kp NUMBER_3  &kp N7     &kp N5        &kp NUMBER_3  &kp NUMBER_1  &kp N9     &kp N8   &kp N0   &kp NUMBER_2  &kp NUMBER_4  &kp NUMBER_6  &trans
+&trans        &kp MINUS  &kp ASTERISK  &kp ESC       &kp ESC       &kp ESC    &kp ESC  &kp ESC  &kp ESC       &kp ESC       &kp ESC       &trans
+&trans        &kp PLUS   &kp PIPE      &kp ESC       &kp ESC       &kp ESC    &kp ESC  &kp ESC  &kp ESC       &kp ESC       &kp ESC       &trans
+                                       &trans        &trans        &trans     &trans   &trans   &trans
             >;
         };
     };
