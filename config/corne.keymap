@@ -33,7 +33,7 @@
             bindings = <
 &kp PLUS       &kp EXCLAMATION  &kp AT_SIGN     &kp HASH         &kp DOLLAR            &kp PERCENT              &kp CARET  &kp AMPERSAND  &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS
 &kp PAGE_UP    &kp ESCAPE       &kp SLASH       &kp BACKSLASH    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp UNDER  &kp LEFT       &kp DOWN       &kp UP                &kp RIGHT              &kp DELETE
-&kp PAGE_DOWN  &kp GRAVE        &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp EQUAL  &kp PIPE       &sk RIGHT_ALT  &sk RIGHT_GUI         &sk RCTRL              &sk RIGHT_SHIFT
+&kp PAGE_DOWN  &kp GRAVE        &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp EQUAL  &kp PIPE       &sk RIGHT_ALT  &sk RIGHT_GUI         &sk RCTRL              &trans
                                                 &trans           &trans                &trans                   &trans     &trans         &trans
             >;
         };
@@ -49,10 +49,10 @@
 
         num {
             bindings = <
-&kp EQUAL  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5     &kp N6   &kp N7        &kp N8        &kp N9        &kp N0  &kp MINUS
-&trans     &kp F1  &kp F2  &kp F3  &kp F5  &kp F5     &kp F12  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none   &trans
-&trans     &kp F6  &kp F7  &kp F8  &kp F9  &kp F10    &kp F11  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none   &trans
-                           &trans  &trans  &trans     &trans   &trans        &trans
+&kp EQUAL  &kp N1        &kp N2           &kp N3           &kp N4  &kp N5     &kp N6   &kp N7        &kp N8                  &kp N9                  &kp N0             &kp MINUS
+&trans     &kp F1        &kp F2           &kp F3           &kp F5  &kp F5     &kp F12  &kp NUMBER_4  &kp N5                  &kp NUMBER_6            &none              &trans
+&trans     &mt LCTRL F6  &mt LEFT_GUI F7  &mt LEFT_ALT F8  &kp F9  &kp F10    &kp F11  &kp NUMBER_1  &mt RIGHT_ALT NUMBER_2  &mt RIGHT_GUI NUMBER_3  &kp RIGHT_CONTROL  &trans
+                                          &trans           &trans  &trans     &trans   &trans        &trans
             >;
         };
 
