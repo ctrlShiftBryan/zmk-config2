@@ -32,8 +32,8 @@
         sym {
             bindings = <
 &kp PLUS     &kp EXCLAMATION  &kp AT_SIGN     &kp HASH         &kp DOLLAR            &kp PERCENT              &kp CARET  &kp AMPERSAND  &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
-&kp PAGE_UP  &kp PAGE_DOWN    &kp SLASH       &kp BACKSLASH    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp LEFT   &kp DOWN       &kp UP         &kp RIGHT             &kp UNDERSCORE         &kp DELETE
-&trans       &kp GRAVE        &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp EQUAL  &kp PIPE       &sk RIGHT_ALT  &sk RIGHT_GUI         &sk RCTRL              &trans
+&kp PAGE_UP  &kp PAGE_DOWN    &kp SLASH       &kp BACKSLASH    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp LEFT   &kp DOWN       &kp UP         &kp RIGHT             &kp UNDERSCORE
+&trans       &kp GRAVE        &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp TILDE  &kp PIPE       &sk RIGHT_ALT  &sk RIGHT_GUI         &sk RCTRL              &trans
                                               &trans           &trans                &trans                   &trans     &trans         &trans
             >;
         };
