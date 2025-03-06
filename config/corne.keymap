@@ -11,6 +11,19 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    behaviors {
+        // Custom hold-tap with longer tapping term for improved mod-tap behavior
+        my_mod_tap: my_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <250>;         // More time to distinguish hold from tap
+            quick-tap-ms = <150>;            // Allows quick tap functionality
+            require-prior-idle-ms = <100>;   // If another key was pressed within this time, prefer tap
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -22,10 +35,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB         &kp Q        &kp W           &kp E           &kp R        &kp T        &kp Y      &kp U        &kp I                &kp O                 &kp P            &kp BACKSPACE
-&kp ESCAPE      &kp A        &kp S           &kp D           &kp F        &kp G        &kp H      &kp J        &kp K                &kp L                 &kp SEMI         &mt RIGHT_GUI SQT
-&kp LEFT_SHIFT  &mt LCTRL Z  &mt LEFT_GUI X  &mt LEFT_ALT C  &kp V        &kp B        &kp N      &kp M        &mt RIGHT_ALT COMMA  &mt RIGHT_GUI PERIOD  &mt RCTRL SLASH  &sk RIGHT_SHIFT
-                                             &sl 2           &lt 2 SPACE  &kp SPACE    &kp ENTER  &lt 1 ENTER  &sl 1
+&kp TAB         &kp Q           &kp W              &kp E              &kp R        &kp T        &kp Y      &kp U        &kp I                   &kp O                    &kp P               &kp BACKSPACE
+&kp ESCAPE      &kp A           &kp S              &kp D              &kp F        &kp G        &kp H      &kp J        &kp K                   &kp L                    &kp SEMI            &my_mod_tap RIGHT_GUI SQT
+&kp LEFT_SHIFT  &my_mod_tap LCTRL Z  &my_mod_tap LEFT_GUI X  &my_mod_tap LEFT_ALT C  &kp V        &kp B        &kp N      &kp M        &my_mod_tap RIGHT_ALT COMMA  &my_mod_tap RIGHT_GUI PERIOD  &my_mod_tap RCTRL SLASH  &sk RIGHT_SHIFT
+                                                &sl 2              &lt 2 SPACE  &kp SPACE    &kp ENTER  &lt 1 ENTER  &sl 1
             >;
         };
 
