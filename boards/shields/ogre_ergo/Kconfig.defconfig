@@ -1,0 +1,23 @@
+if SHIELD_OGRE_ERGO_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Ogre Ergo"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_OGRE_ERGO_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "Ogre Ergo"
+
+endif
+
+if SHIELD_OGRE_ERGO_LEFT || SHIELD_OGRE_ERGO_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
